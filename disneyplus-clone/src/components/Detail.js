@@ -27,6 +27,25 @@ const Detail = () => {
           <img src="/images/group-icon.png" />
         </GroupButton>
       </ControlBar>
+      <SubTitle>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry
+        </p>
+      </SubTitle>
+      <Description>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </Description>
     </Container>
   );
 };
@@ -109,3 +128,16 @@ const AddButton = styled.button`
   }
 `;
 const GroupButton = styled(AddButton)``;
+
+const SubTitle = styled.div`
+  color: rgb(249, 249, 249, 0.7);
+  font-size: 14px;
+  min-height: 20px;
+  margin-top: 26px;
+`;
+const Description = styled(SubTitle)`
+  font-size: 16px;
+  color: white;
+  margin-top: 16px;
+  line-height: 1.4;
+`;
